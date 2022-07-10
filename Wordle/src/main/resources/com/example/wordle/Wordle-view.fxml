@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordle.WordleController">
+   <children>
+      <Rectangle fx:id="background" arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="500.0" stroke="TRANSPARENT" strokeType="INSIDE" width="400.0" />
+      <BorderPane fx:id="layout" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#type" prefHeight="500.0" prefWidth="400.0">
+         <bottom>
+            <Button fx:id="start" focusTraversable="false" mnemonicParsing="false" onAction="#startGame" prefHeight="3.0" prefWidth="74.0" scaleX="1.5" scaleY="1.5" text="Start New Game" textAlignment="CENTER" translateY="-15.0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Verdana" size="7.0" />
+               </font>
+            </Button>
+         </bottom>
+         <center>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="399.0" prefWidth="400.0" translateY="-50.0" BorderPane.alignment="CENTER">
+               <top>
+                  <GridPane fx:id="board" alignment="CENTER" focusTraversable="true" hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="368.0" translateY="45.0" vgap="15.0" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" translateY="45.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Rectangle fx:id="wordBankBack" arcHeight="25.0" arcWidth="25.0" fill="#b5b5b5" height="120.0" stroke="TRANSPARENT" strokeType="INSIDE" width="330.0" />
+                        <FlowPane fx:id="wordBank" alignment="CENTER" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="321.0" vgap="5.0" />
+                     </children>
+                  </StackPane>
+               </center>
+            </BorderPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="100.0" translateX="10.0" translateY="-13.0">
+                     <children>
+                        <Rectangle fx:id="fontBack" arcHeight="20.0" arcWidth="20.0" fill="#b5b5b5" height="40.0" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0" />
+                        <Label fx:id="fonts" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onContextMenuRequested="#showFontMenu" text="Font Settings" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="200.0" translateY="10.0">
+                     <children>
+                        <Rectangle fx:id="titleBack" arcHeight="30.0" arcWidth="30.0" fill="#b5b5b5" height="55.0" stroke="#36282800" strokeType="INSIDE" translateY="-25.0" width="158.0" />
+                        <Label fx:id="title" alignment="CENTER" contentDisplay="CENTER" prefHeight="71.0" prefWidth="207.0" text="Wordle" textAlignment="CENTER" textFill="#393636" translateY="-25.0">
+                           <font>
+                              <Font name="Verdana" size="37.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane fx:id="colorBack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="100.0" translateX="-10.0" translateY="-13.0">
+                     <children>
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#b5b5b5" height="40.0" stroke="TRANSPARENT" strokeType="INSIDE" width="100.0" />
+                        <Label fx:id="colors" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="-Infinity" onContextMenuRequested="#showColorMenu" text="Color Settings" textAlignment="CENTER">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>
