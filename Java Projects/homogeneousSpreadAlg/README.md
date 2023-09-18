@@ -1,0 +1,1 @@
+Challenge Interview Problem: to spread an array of "frames" (values in this case) into a set array of size 20, evenly as possible with no bias; a sort of integer interopolation, using only loops and basic functions. 
