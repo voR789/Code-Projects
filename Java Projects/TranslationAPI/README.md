@@ -1,5 +1,5 @@
 This is a rudimentary translation program using "DEVISTY"'s Text Translator API on Rapid API. Meant to be a practice on using and calling APIs. May be expanded in the future with more complex, in depth API using projects.
-***Language Codes (Must be used)***
+***Language Codes (Must be used)***  
 Afrikaans	af  
 Albanian	sq  
 Amharic	am  
