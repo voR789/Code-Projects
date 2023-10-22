@@ -1,4 +1,4 @@
-/*fun main() {
+fun main() {
     val morningNotification = 51
     val eveningNotification = 135
     
@@ -14,7 +14,7 @@ fun printNotificationSummary(numberOfMessages: Int) {
         else 
         	"You have $numberOfMessages notifications."
     )
-}*/
+}
 
 /*fun main() {
     val child = 5
